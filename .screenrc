@@ -1,0 +1,113 @@
+
+startup_message off
+
+# can't live without changing default esacpe
+escape ^Xx
+
+# caption always "%{= ck}%t  %= %Y-%m-%d | %c"
+# caption string "%{= ck}%-w%{rw}%n %t%{-}%+w"
+# caption string "%{= Kw}%-w%{BW}%n %t%{-}%+w"
+caption string "%{= Kw}%-w  %{BW}%n %t%{-}%+w"
+caption always
+hardstatus alwayslastline " "
+
+defutf8 on
+
+# terminfo and termcap for nice 256 color terminal
+term screen-256color
+# allow bold colors
+attrcolor b ".I"
+# tell screen how to set colors. AB = background, AF=foreground
+termcapinfo xterm-256color 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
+defbce on    # use current bg color for erased chars
+
+defscrollback 7000
+
+# disable alternate text buffer in screen
+# termcapinfo xterm|xterms|xs|cygwin ti@:te@
+# termcapinfo screen|xterm*|rxvt*|cygwin ti@:te@
+
+bindkey "^[[5;2~" eval "copy" "stuff ^u"
+bindkey -m "^[[5;2~" stuff ^u
+bindkey -m "^[[6;2~" stuff ^d
+
+# termcapinfo rxvt-unicode ti@:te@
+# termcapinfo rxvt ti@:te@
+# termcapinfo rxvt 'hs:ts=\E]2;:fs=07:ds=\E]2;screen07'
+
+# make error messages funnier, but less meaningful
+nethack on
+
+hardstatus off
+# no annoying audible bell, please
+vbell on
+vbell_msg "Hey - something's ringing on %t (%n)"
+activity "Hey - something's moving in %t (%n)"
+
+#remove some stupid / dangerous key bindings
+bind k
+bind ^k
+bind .
+bind ^\
+bind \\
+bind ^h
+bind h
+
+bind c screen 1
+bind 0 select 10
+screen -t local 1
+select 1
+
+bind j focus down
+bind k focus up
+bind t focus top
+bind b focus bottom
+
+bind + resize +3
+bind - resize -3
+
+
+# easy shortcuts in case someone borrows my terminal
+bindkey -k k2 next
+bindkey -k k3 focus
+
+monitor on
+
+# keep dead windows around, resurrect with 'r'
+zombie qr
+
+# common commands (C-q not C-a):
+# C-a ?    help
+# C-a A    rename window
+# C-a c    create new window
+# C-a S    split window horizontally
+# C-a |    split window vertically
+# C-a Q    unsplit windows
+# C-a d    detach
+# C-a "    view/choose screens
+# C-a p    previous
+# C-a n    next
+# C-a M    montior background windows
+# C-a C-I  switch window focus  (or C-a <tab>)
+# C-a :source <file>    source external file (put screen -t commandshere)
+# C-a [    enter scroll mode (shift PgU/PgD should work without this)
+# C-a H    turn on/off screen logging
+# :resize +3 - increase size of current windows by 3
+# :number X - move current tab to window X
+#
+# screen -dr detach/reattach
+
+
+# screen -t FCX1 1 telnet 10.31.153.7 3013
+# screen -t FCX2 2 telnet 10.31.153.7 3015
+# screen -t ADX-L 3 telnet 10.31.153.7 3014
+# screen -t ADX-R 4 telnet 10.31.153.7 3011
+# screen -t MLX50 5 telnet 10.31.153.19 3007
+# screen -t MLX6 6 telnet  10.31.153.19 3006
+
+
+# use stuff to send commands to all screens
+# at \# stuff "some cmds here"\015
+# bindkey ^[w at \# stuff 15151515end1515151515en151231515\wr15
+bindkey ^[w at \# stuff "^Mend^Mcopy running-config startup-config^M"
+

@@ -1,0 +1,307 @@
+
+! ------------------------------------------------------------------------------
+! ! ROFI Color theme
+! ! ------------------------------------------------------------------------------
+
+! State:               ´bg´,     ´fg´,     ´bgalt´,  ´hlbg´,   ´hlfg´
+!rofi.color-normal:     argb:00000000, #1aa, argb:11FFFFFF, #1aa,#333
+!rofi.color-urgent:     argb:00000000, #f99, argb:11FFFFFF, #f99,#333
+!rofi.color-active:     argb:00000000, #aa1, argb:11FFFFFF, #aa1,#333
+!rofi.color-window:     argb:ee333333, #1aa,#1aa
+!rofi.color-enabled:    true
+!rofi.separator-style:  dash
+
+!!                  ´background´, ´border´
+!rofi.color-window:   argb:FF005F5F, #1aa,#1aa 
+rofi.color-enabled:    true
+rofi.color-window: #005F5F, #005F5F, #005F5F
+rofi.color-normal: #005F5F, #ffffff, #005F5F, #acb1ba, #205171
+!rofi.color-active: #2b303b, #268bd2, #2b303b, #2b303b, #205171
+!rofi.separator-style:                solid
+
+
+! ------------------------------------------------------------------------------
+! ! urxvt
+! ! ------------------------------------------------------------------------------
+
+!-- Xft settings -- !
+!Xft.autohint: 0
+!Xft.lcdfilter:  lcddefault
+!Xft.hintstyle:  hintslight
+!Xft.hinting: 1
+!Xft.antialias: 1
+!Xft.rgba: rgb
+
+!
+URxvt.scrollBar: false
+URxvt.font: xft:Ubuntu Mono for Powerline:size=12
+!URxvt*italicFont: xft:Ubuntu Mono for Powerline:size=12
+URxvt.colorIT:  red
+URxvt.iconFile: /usr/share/icons/Numix-Circle/scalable/apps/terminal.svg
+!URxvt.perl-ext-common: default,matcher,tabbedex,resize-font,clipboard
+URxvt.perl-ext-common: default,matcher,font-size,selection-to-clipboard
+!URxvt.perl-ext-common: default,matcher,tabbedex,font-size,selection-to-clipboard
+URxvt.url-launcher: /usr/bin/firefox
+URxvt.matcher.button: 1
+URxvt.matcher.rend.0: Uline Bold fg5
+!URxvt.internalBorder:  4
+URxvt*.cutchars: "()*,;<>[]{}|`\"'#│"'`"
+
+! tabed
+!URxvt.tabbed.tabbar-fg: 2
+!URxvt.tabbed.tabbar-bg: 0
+!URxvt.tabbed.tab-fg: 6
+!URxvt.tabbed.tab-bg: 0
+!URxvt.tabbed.autohide: true
+
+! tabdex
+!URxvt.colorUL: #4682B4
+!URxvt.colorUL: #323A45
+URxvt.tabbed.tabbar-fg: 2
+URxvt.tabbed.tabbar-bg: 0
+URxvt.tabbed.tab-fg: 2
+URxvt.tabbed.tab-bg: 0
+URxvt.tabbed.autohide:  yes
+URxvt.tabbed.new-button:  no
+URxvt.tabbed.title: yes
+
+
+!! Change font size on Control-Plus/Minus
+URxvt.keysym.Control-0x2b: font-size:increase
+URxvt.keysym.Control-0x2d: font-size:decrease
+
+! Copy/Paste
+URxvt.clipboard.autocopy: true
+
+URxvt.iso14755: false
+URxvt.iso14755_52: false
+
+
+! Transperancy
+URxvt.depth: 32
+!URxvt.background: [95]#323A45
+
+!URxvt*background: black
+!URxvt*foreground: white
+
+!make the cursor red
+!URxvt*cursorColor : #FF0000
+
+!make the cursor green
+URxvt*cursorColor : #005F5F
+
+! --------------------------- !
+!! Tango color theme
+!URxvt.color0: rgb:00/00/00
+!URxvt.color1: rgb:CC/00/00
+!URxvt.color2: rgb:4E/9A/06
+!URxvt.color3: rgb:C4/A0/00
+!URxvt.color4: rgb:34/65/A4
+!URxvt.color5: rgb:75/50/7B
+!URxvt.color6: rgb:06/98/9A
+!URxvt.color7: rgb:D3/D7/CF
+!URxvt.color8: rgb:55/57/53
+!URxvt.color9: rgb:EF/29/29
+!URxvt.color10: rgb:8A/E2/34
+!URxvt.color11: rgb:FC/E9/4F
+!URxvt.color12: rgb:72/9F/CF
+!URxvt.color13: rgb:AD/7F/A8
+!URxvt.color14: rgb:34/E2/E2
+!URxvt.color15: rgb:EE/EE/EC
+!URxvt.colorBD: rgb:ff/ff/ff
+! --------------------------- !
+!! Gotham color theme
+!*.foreground:   #98d1ce
+!*.background:   #0a0f14
+!*.cursorColor:  #98d1ce
+!*.color0:       #0a0f14
+!*.color8:       #10151b
+!*.color1:       #c33027
+!*.color9:       #d26939
+!*.color2:       #26a98b
+!*.color10:      #081f2d
+!*.color3:       #edb54b
+!*.color11:      #245361
+!*.color4:       #195465
+!*.color12:      #093748
+!*.color5:       #4e5165
+!*.color13:      #888ba5
+!*.color6:       #33859d
+!*.color14:      #599caa
+!*.color7:       #98d1ce
+!*.color15:      #d3ebe9
+! --------------------------- !
+! Gotham modified
+!*.foreground:   #cad1d1
+!*.background:   #0a0f14
+!*.cursorColor:  #98d1ce
+!*.color0:       #0a0f14
+!*.color8:       #7289a5
+!*.color1:       #c33027
+!*.color9:       #d26939
+!*.color2:       #26a98b
+!*.color10:      #155378
+!*.color3:       #edb54b
+!*.color11:      #245361
+!*.color4:       #195465
+!*.color12:      #026387
+!*.color5:       #4e5165
+!*.color13:      #888ba5
+!*.color6:       #33859d
+!*.color14:      #599caa
+!*.color7:       #98d1ce
+!*.color15:      #d3ebe9
+! --------------------------- !
+!! Lucius Dark
+!*background:  #303030
+!*foreground:  #d7d7d7
+!*cursorColor: #87afd7
+!*color0:      #303030
+!*color8:      #303030
+!*color1:      #ff5f5f
+!*color9:      #ff5f5f
+!*color2:      #afd787
+!*color10:     #afd787
+!*color3:      #d7d7af
+!*color11:     #d7d7af
+!*color4:      #87d7ff
+!*color12:     #87d7ff
+!*color5:      #d7afd7
+!*color13:     #d7afd7
+!*color6:      #87d7af
+!*color14:     #87d7af
+!*color7:      #d7d7d7
+!*color15:     #d7d7d7
+! --------------------------- !
+!
+!! Base16 Codeschool
+!! Scheme: brettof86
+!#define base00 #232c31
+!#define base01 #1c3657
+!#define base02 #2a343a
+!#define base03 #3f4944
+!#define base04 #84898c
+!#define base05 #9ea7a6
+!#define base06 #a7cfa3
+!#define base07 #b5d8f6
+!#define base08 #2a5491
+!#define base09 #43820d
+!#define base0A #a03b1e
+!#define base0B #237986
+!#define base0C #b02f30
+!#define base0D #484d79
+!#define base0E #c59820
+!#define base0F #c98344
+
+!*.foreground:   base05
+!*.background:   base00
+!*.cursorColor:  base05
+!*.color0:       base00
+!*.color1:       base08
+!*.color2:       base0B
+!*.color3:       base0A
+!*.color4:       base0D
+!*.color5:       base0E
+!*.color6:       base0C
+!*.color7:       base05
+!*.color8:       base03
+!*.color9:       base08
+!*.color10:      base0B
+!*.color11:      base0A
+!*.color12:      base0D
+!*.color13:      base0E
+!*.color14:      base0C
+!*.color15:      base07
+!! Note: colors beyond 15 might not be loaded (e.g., xterm, urxvt),
+!! ! use 'shell' template to set these if necessary
+!*.color16:      base09
+!*.color17:      base0F
+!*.color18:      base01
+!*.color19:      base02
+!*.color20:      base04
+!*.color21:      base06
+
+! --------------------------- !
+
+!! base16 ocean
+#define base00 #2b303b
+#define base01 #343d46
+#define base02 #4f5b66
+#define base03 #65737e
+#define base04 #a7adba
+#define base05 #c0c5ce
+#define base06 #dfe1e8
+#define base07 #eff1f5
+#define base08 #bf616a
+#define base09 #d08770
+#define base0A #ebcb8b
+#define base0B #a3be8c
+#define base0C #96b5b4
+#define base0D #8fa1b3
+#define base0E #b48ead
+#define base0F #ab7967
+*.foreground:   base05
+*.background:   base00
+*.cursorColor:  base05
+*.color0:       #3c424f
+!*.color0:       base00
+*.color1:       base08
+*.color2:       base0B
+*.color3:       base0A
+*.color4:       base0D
+*.color5:       base0E
+*.color6:       base0C
+*.color7:       base05
+*.color8:       base03
+*.color9:       base08
+*.color10:      base0B
+*.color11:      base0A
+*.color12:      base0D
+*.color13:      base0E
+*.color14:      base0C
+*.color15:      base07
+*.color16:      base09
+*.color17:      base0F
+*.color18:      base01
+*.color19:      base02
+*.color20:      base04
+*.color21:      base06
+! --------------------------- !
+
+!! Molokai
+!#define Molokai_black        #1B1D1E
+!#define Molokai_red          #B60050
+!#define Molokai_red2         #FF0000
+!#define Molokai_green        #88BB22
+!#define Molokai_brown        #C47F2C
+!#define Molokai_blue         #30309B
+!#define Molokai_purple       #7E40A5
+!#define Molokai_cyan         #4699AF
+!#define Molokai_light_grey   #9999AA
+!#define Molokai_dark_grey    #303030
+!#define Molokai_light_red    #F92672
+!#define Molokai_light_green  #80FF00
+!#define Molokai_yellow       #FFBA68
+!#define Molokai_light_blue   #7070F0
+!#define Molokai_light_purple #BB88DD
+!#define Molokai_light_cyan   #66D9EF
+!#define Molokai_white        #F8F8F2
+!URxvt*background  : Molokai_black
+!URxvt*foreground  : Molokai_white
+!URxvt*cursorColor : Molokai_red2
+!URxvt*color0      : Molokai_black
+!URxvt*color1      : Molokai_red
+!URxvt*color2      : Molokai_green
+!URxvt*color3      : Molokai_brown
+!URxvt*color4      : Molokai_blue
+!URxvt*color5      : Molokai_purple
+!URxvt*color6      : Molokai_cyan
+!URxvt*color7      : Molokai_light_grey
+!URxvt*color8      : Molokai_dark_grey
+!URxvt*color9      : Molokai_light_red
+!URxvt*color10     : Molokai_light_green
+!URxvt*color11     : Molokai_yellow
+!URxvt*color12     : Molokai_light_blue
+!URxvt*color13     : Molokai_light_purple
+!URxvt*color14     : Molokai_light_cyan
+!URxvt*color15     : Molokai_white

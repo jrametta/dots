@@ -1,0 +1,64 @@
+[options]
+allow_bold = false
+audible_bell = false
+browser = firefox
+clickable_url = true
+cursor_blink = off
+dynamic_title = false
+scroll_on_output = false
+scroll_on_keystroke = true
+mouse_autohide = false
+urgent_on_bell = true
+# font = Terminus 12
+# font = Droid Sans Mono 10
+font = Ubuntu Mono for Powerline 12
+scrollback_lines = 10000
+search_wrap = true
+#icon_name = terminal
+
+cursor_shape = block
+
+[colors]
+
+foreground      = #dcdccc
+foreground_bold = #dcdccc
+cursor          = #005F5F
+#background      = #303030
+background      = #2b303b
+
+# black
+color0  = #3f3f3f
+color8  = #666666
+
+# red
+#color1  = #9e1828
+color1  = #bf616a
+color9  = #cf6171
+
+# green
+color2  = #aece92
+color10 = #c5f779
+
+# yellow
+color3  = #968a38
+color11 = #fff796
+
+# blue
+color4  = #616191
+color12 = #4186be
+
+# magenta
+color5  = #963c59
+color13 = #cf9ebe
+
+# cyan
+color6  = #418179
+color14 = #71bebe
+
+# white
+color7  = #bebebe
+color15 = #ffffff
+
+[hints]
+
+# vim: ft=dosini cms=#%s
